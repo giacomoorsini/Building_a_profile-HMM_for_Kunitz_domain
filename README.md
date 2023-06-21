@@ -142,7 +142,7 @@ Once the UniprotIDs of the proteins that have <u>not</u> been used in the traini
 
 Next, create a FASTA file that contains all of the sequences (`total_set.fasta`) of the positive and negative sets, that will be our final testing set:
 ```
-cat db_kunitz_toremove.idlist ../UniProt_Swiss-Prot_data/uniprot_sp_nonkunitz.fasta >total_set.fasta
+cat db_rmkunitz.fasta ../UniProt_Swiss-Prot_data/uniprot_sp_nonkunitz.fasta >total_set.fasta
 ```
 
 Run `hmmsearch`, with the file that was just generated (`total_set.fasta`) as a sequence database:
@@ -158,7 +158,7 @@ head -n final_pos val_set.search |tail -n +18|grep -v inclusion >test_set.out
 - `head -n [x]`: display the first x lines of the input file.
 - `tail -n +[x]`: display the lines starting from line x of the input file, till the end.
 
-&emsp;<u>Note</u>: to know the `final_pos`, you'll have to look at the file manually. To dp that, i suggest to use the vi text editor, as it shows the number of the row you are in. 
+&emsp;<u>Note</u>: to know the `final_pos`, you'll have to look at the file manually. To do that, I suggest to use the vi text editor, as it shows the number of the row you are in. 
 
 Now that the hits are refined, generate a file for each two sub-validating set () that will be used later for the evaluation of the performance, in the format `UniProtID E-value class`, where `E-value` is the E-value for the highest scoring hit (domain) and the `class` is the actual ("real") annotation, obtained from UniProt: 1 for proteins that contain a Kunitz domain and 0 for proteins that don't contain a Kunitz domain.
 
