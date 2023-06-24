@@ -4,7 +4,7 @@ This repository contains the instructions for building a Hidden Markov Model pro
 
 The project consists of building a profile-HMM for a the Kunitz domain, starting from available protein structures from RCSB PDB. Once the model is built, it is to be used to annotate domains in UniProtKB/Swiss-Prot proteins.
 
-For more details, see also the written report (`Kunitz-HMM_GiacomoOrsini.pdf`).
+For more details, see also the written report (`project_lb1b-Giacomo_Orsini.pdf`).
 
 Written by Giacomo Orsini.
 
