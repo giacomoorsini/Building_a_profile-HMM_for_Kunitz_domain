@@ -1,4 +1,4 @@
-# Building a Profile Hidden Markov Model for a protein domain (Kunitz-type protease inhibitor example)
+# LB2 final project: Building a Profile Hidden Markov Model for a protein domain (Kunitz-type protease inhibitor example)
 
 This repository contains the instructions for building a Hidden Markov Model profile for a protein domain, as well as an example model generated for the final project of the Laboratory of Bioinformatics course of the Master's Degree in Bioinformatics of the Università di Bologna, course 2022-2023.
 
